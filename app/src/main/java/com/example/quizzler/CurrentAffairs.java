@@ -11,25 +11,25 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class BtsActivity extends AppCompatActivity {
-TextView question;
-Button confirm;
-RadioGroup radio_g;
-RadioButton op1,op2,op3,op4;
+public class CurrentAffairs extends AppCompatActivity {
+    TextView question;
+    Button confirm;
+    RadioGroup radio_g;
+    RadioButton op1,op2,op3,op4;
 
 
-String[] questions = {"What is the name of BTS's debut album?","Which was BTS's first show?","On which Award show did BTS make their US TV performance debut?","Which date is ARMY's birthday?","Who is the youngest member of the band?"};
+    String[] questions = {"FIDE is International Federation of which game?","Which Ministry is associated with National Logistics Excellence Awards?","Which institution has launched a new Scheme named \'FASTER\' or \'FAST and Secure Transmission of Electronic Records\'?","Where is Sohra town located?","Bhartiya Prakritic Krishi Paddhati is a sub-Scheme of which programme?"};
 
-String[] answers = {"2 Cool 4 Skool","Rookie King: Channel Bangtan","American Music Awards","July 9","Jungkook"};
+    String[] answers = {"Chess","Ministry of Commerce and Industry","Supreme Court of India","Madhya Pradesh","Paramparagat Krishi Vikas Yojna"};
 
-String[] opt ={"2 Cool 4 Skool","We are Bulletproof","Skool Luv Affair","O!RUL8,2?","Run BTS","BTS Gayo","Rookie King: Channel Bangtan","American Hustle Life","American Music Awards","Billboard Music Awards","The Grammys","Teen Choice Awards","June 12","June 13","July 13","July 9","Jungkook","Suga","Jin","V"};
+    String[] opt ={"Football","Chess","Basketball","Hockey","Ministry of Commerce and Industry","Ministry of MSMC","Ministry of roads Transport and Highways","Ministry of Power","Reserve Bank of India","Supreme Court of India","Election Commission of India","Central Bureau of Investigation","Madhya Pradesh","Haryana","Rajasthan","Uttar Pradesh","Paramparagat Krishi Vikas Yojna","Pradhan Mantri Fazal Bima Yojna","Pradhan Mantri Matru Vardana Yojna","Pradhan Mantri KISAN"};
 
-int flag=0;
-public static int marks=0,correct=0,wrong=0;
+    int flag=0;
+    public static int marks=0,correct=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bts);
+        setContentView(R.layout.activity_current_affairs);
 
         question = findViewById(R.id.question);
         question.setText(questions[flag]);
@@ -47,7 +47,7 @@ public static int marks=0,correct=0,wrong=0;
             @Override
             public void onClick(View v) {
                 if(radio_g.getCheckedRadioButtonId()==-1){
-                    Toast.makeText(BtsActivity.this, "Please select one option", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CurrentAffairs.this, "Please select one option", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -69,7 +69,7 @@ public static int marks=0,correct=0,wrong=0;
                 else
                 {
                     marks = correct;
-                    Intent intent = new Intent(BtsActivity.this,BTSResultActivity.class);
+                    Intent intent = new Intent(CurrentAffairs.this,currentAffairsResult.class);
 
                     startActivity(intent);
                 }
@@ -77,4 +77,5 @@ public static int marks=0,correct=0,wrong=0;
             }
         });
     }
+
 }
