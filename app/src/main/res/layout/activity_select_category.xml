@@ -27,28 +27,25 @@
         android:layout_width="79dp"
         android:layout_height="80dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/currentAffairs"
-        app:layout_constraintHorizontal_bias="0.724"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.162"
+        app:layout_constraintVertical_bias="0.164"
         app:srcCompat="@drawable/news" />
 
     <Button
         android:id="@+id/currentAffairs"
         android:layout_width="232dp"
         android:layout_height="49dp"
-        android:background="@color/black"
         android:text="Current affairs"
-        android:textColor="#1D639C"
-        android:textColorHint="#000000"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.597"
+        app:layout_constraintHorizontal_bias="0.748"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.173" />
+        app:layout_constraintVertical_bias="0.18" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -65,17 +62,16 @@
     <Button
         android:id="@+id/sports"
         android:layout_width="232dp"
-        android:background="@color/transparent"
-        android:textColor="#1D639C"
-        android:textStyle="bold"
+
         android:layout_height="49dp"
         android:text="Sports"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintHorizontal_bias="0.748"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.313" />
+        app:layout_constraintVertical_bias="0.307" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -93,16 +89,15 @@
         android:id="@+id/programming"
         android:layout_width="232dp"
         android:layout_height="49dp"
-        android:background="@color/transparent"
-        android:textColor="#1D639C"
-        android:textStyle="bold"
+
         android:text="Programming"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.603"
+        app:layout_constraintHorizontal_bias="0.748"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.457" />
+        app:layout_constraintVertical_bias="0.448" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -133,42 +128,39 @@
         android:layout_width="232dp"
         android:layout_height="49dp"
         android:text="Entertainment"
-        android:background="@color/transparent"
-        android:textColor="#1D639C"
+
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.603"
+        app:layout_constraintHorizontal_bias="0.748"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.614" />
+        app:layout_constraintVertical_bias="0.605" />
 
     <Button
         android:id="@+id/bts"
         android:layout_width="232dp"
-        android:background="@color/transparent"
-        android:textColor="#1D639C"
-        android:textStyle="bold"
+
         android:layout_height="49dp"
         android:text="BTS"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.603"
+        app:layout_constraintHorizontal_bias="0.748"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.753" />
+        app:layout_constraintVertical_bias="0.747" />
 
     <Button
         android:id="@+id/anime"
         android:layout_width="232dp"
         android:layout_height="49dp"
-        android:background="@color/transparent"
-        android:textColor="#1D639C"
-        android:textStyle="bold"
+
         android:text="Anime"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.603"
+        app:layout_constraintHorizontal_bias="0.748"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.894" />
@@ -184,6 +176,13 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView7"
         app:layout_constraintVertical_bias="0.185"
         app:srcCompat="@drawable/anime" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
