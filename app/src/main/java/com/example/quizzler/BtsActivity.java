@@ -2,6 +2,7 @@ package com.example.quizzler;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -67,6 +68,13 @@ public static int marks=0,correct=0,wrong=0;
                     op3.setText(opt[flag*4 +2]);
                     op4.setText(opt[flag*4 +3]);
                 }
+                else
+                {
+                    marks = correct;
+                    Intent intent = new Intent(BtsActivity.this,BTSResultActivity.class);
+                    startActivity(intent);
+                }
+                radio_g.clearCheck();
             }
         });
     }
