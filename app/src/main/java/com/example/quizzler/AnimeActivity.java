@@ -18,11 +18,11 @@ public class AnimeActivity extends AppCompatActivity {
     RadioButton op1,op2,op3,op4;
 
 
-    String[] questions = {"What is the name of strongest move in jujutsu Kaisen?","Which is the longest Anime series ever?","On which Award show did BTS make their US TV performance debut?","Which date is ARMY's birthday?","Who is the youngest member of the band?"};
+    String[] questions = {"What is the name of strongest move in jujutsu Kaisen?","Which is the longest Anime series ever?","Which anime character is famous for defeating all his opponents in one punch?","Who commanded the survey corps in Attack on Titan?","Which is the highest-grossing anime film worldwide?"};
                                                                                                                           //Questions given by Sachetan
-    String[] answers = {"Domain Expansin","Sazae-san","American Music Awards","July 9","Jungkook"};
+    String[] answers = {"Domain Expansin","Sazae-san","Saitama","Erwin Smith","Demon Slayer: Mugen Train"};
 
-    String[] opt ={"kamehameha","Domain Expansin","Serious Punch","Rasengan","One Piece","Dragon Ball Z","Sazae-san","Naruto","American Music Awards","Billboard Music Awards","The Grammys","Teen Choice Awards","June 12","June 13","July 13","July 9","Jungkook","Suga","Jin","V"};
+    String[] opt ={"kamehameha","Domain Expansin","Serious Punch","Rasengan","One Piece","Dragon Ball Z","Sazae-san","Naruto","Goku","Saitama","All Might","Gajo Satoru","Hange Zoe","Erwin Smith","Levi Ackerman","Keith Shadis","Your name","Spirited Away","Demon Slayer: Mugen Train","Weathering with you"};
 
     int flag=0;
     public static int marks=0,correct=0;
