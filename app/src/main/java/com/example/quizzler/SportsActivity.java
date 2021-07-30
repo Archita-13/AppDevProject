@@ -20,7 +20,7 @@ public class SportsActivity extends AppCompatActivity {
 
     String[] questions = {"Usain bolt holds the world record of finishing the 100 m race in how many seconds?","Which Indian athlete was the first to win a medal in tokyo olympics 2020?","Michael Phelps holds the record for the most number of olympic gold medals. How many gold medals has he earned in the olympics till date?","Which football player holds the record for the most number of goals in Uefa Champions League history?","Roger Federer, Rafael Nadal, Novak Djokovic hold the record for the most number of grand slam titles. How many have they each won?"};
 
-    String[] answers = {"9.58 sec","Mirabai Chanu","23","Cristiano Ronaldo","20"};
+    String[] answers = {"9.58","Mirabai Chanu","23","Cristiano Ronaldo","20"};
 
     String[] opt ={"9.58", "9.89", "9.2","10.1","Manika Batra", "Mary Kom", "PV Sindhu", "Mirabai Chanu","20", "23", "34", "30","Lionel Messi", "Cristiano Ronaldo", "Robert Lewandowski", "Raul Gonzalez","21","20","18","22"};
 
