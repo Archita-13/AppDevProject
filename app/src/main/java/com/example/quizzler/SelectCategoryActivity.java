@@ -11,6 +11,7 @@ public class SelectCategoryActivity extends AppCompatActivity {
 Button bts;
 Button currentAffairs;
 Button programming;
+Button entertainment;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,6 +19,7 @@ Button programming;
         bts = findViewById(R.id.bts);
         currentAffairs = findViewById(R.id.currentAffairs);
         programming = findViewById(R.id.programming);
+        entertainment = findViewById(R.id.entertainment);
 
         bts.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,6 +40,13 @@ Button programming;
             public void onClick(View v) {
                 Intent programming_page = new Intent(SelectCategoryActivity.this,ProgrammingActivity.class);
                 startActivity(programming_page);
+            }
+        });
+        entertainment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent entertainment_page = new Intent(SelectCategoryActivity.this,EntertainmentActivity.class);
+                startActivity(entertainment_page);
             }
         });
 
