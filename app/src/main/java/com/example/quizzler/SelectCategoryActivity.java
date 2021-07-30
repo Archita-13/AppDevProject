@@ -10,12 +10,14 @@ import android.widget.Button;
 public class SelectCategoryActivity extends AppCompatActivity {
 Button bts;
 Button currentAffairs;
+Button programming;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_category);
         bts = findViewById(R.id.bts);
         currentAffairs = findViewById(R.id.currentAffairs);
+        programming = findViewById(R.id.programming);
 
         bts.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,6 +31,13 @@ Button currentAffairs;
             public void onClick(View v) {
                 Intent curr = new Intent(SelectCategoryActivity.this,CurrentAffairs.class);
                 startActivity(curr);
+            }
+        });
+        programming.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent programming_page = new Intent(SelectCategoryActivity.this,ProgrammingActivity.class);
+                startActivity(programming_page);
             }
         });
 

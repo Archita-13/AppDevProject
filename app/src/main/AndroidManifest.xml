@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Quizzler">
+        <activity android:name=".ProgrammingResult"></activity>
+        <activity android:name=".ProgrammingActivity" />
         <activity android:name=".currentAffairsResult" />
         <activity android:name=".CurrentAffairs" />
         <activity android:name=".BTSResultActivity" />
