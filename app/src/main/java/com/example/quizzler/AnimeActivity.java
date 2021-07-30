@@ -16,13 +16,12 @@ public class AnimeActivity extends AppCompatActivity {
     Button confirm;
     RadioGroup radio_g;
     RadioButton op1,op2,op3,op4;
+  
+    String[] questions = {"What is the name of strongest move in jujutsu Kaisen?","Which is the longest Anime series ever?","Which anime character is famous for defeating all his opponents in one punch?","Who commanded the survey corps in Attack on Titan?","Which is the highest-grossing anime film worldwide?"};
+                                                                                                                          //Questions given by Sachetan
+    String[] answers = {"Domain Expansin","Sazae-san","Saitama","Erwin Smith","Demon Slayer: Mugen Train"};
 
-    String[] questions = {"What is the name of strongest move in jujutsu Kaisen?","Which is the longest Anime series ever?","Who commanded the survey corps in the Attack of Titans?","Which is the highest-grossing anime film worldwide(2021)?","Which anime character is famous for defeating all his opponents in one punch?"};
-
-    String[] answers = {"Domain Expansin","Sazae-san","Erwin Smith","Demon Slayer","Saitama"};
-
-    String[] opt ={"Kamehameha","Domain Expansin","Serious Punch","Rasengan","One Piece","Dragon Ball Z","Sazae-san","Naruto","Hange Zoe","Erwin Smith","Levi Ackerman","Keith Shadis","Your Name","Spirited Away","Demon Slayer:Mugen Train","Weathering with you","Goku","Saitama","All night","Gojo Satoru"};
-
+    String[] opt ={"kamehameha","Domain Expansin","Serious Punch","Rasengan","One Piece","Dragon Ball Z","Sazae-san","Naruto","Goku","Saitama","All Might","Gajo Satoru","Hange Zoe","Erwin Smith","Levi Ackerman","Keith Shadis","Your name","Spirited Away","Demon Slayer: Mugen Train","Weathering with you"};
 
     int flag=0;
     public static int marks=0,correct=0;
