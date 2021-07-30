@@ -3,17 +3,21 @@ package com.example.quizzler;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class SportsResult extends AppCompatActivity {
     TextView result,state;
+    Button button7;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sports_result);
         result = findViewById(R.id.sports_result);
         state = findViewById(R.id.sports_statement);
-
+        button7=findViewById(R.id.button7);
         StringBuffer sb = new StringBuffer();
         sb.append("Your Score is : " + SportsActivity.correct);
         result.setText(sb);
@@ -29,5 +33,13 @@ public class SportsResult extends AppCompatActivity {
         }
 
         SportsActivity.correct=0;
+        button7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                moveTaskToBack(true);
+                android.os.Process.killProcess(android.os.Process.myPid());
+                System.exit(1);
+            }
+        });
     }
 }

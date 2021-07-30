@@ -16,8 +16,7 @@ public class AnimeActivity extends AppCompatActivity {
     Button confirm;
     RadioGroup radio_g;
     RadioButton op1,op2,op3,op4;
-
-
+  
     String[] questions = {"What is the name of strongest move in jujutsu Kaisen?","Which is the longest Anime series ever?","Which anime character is famous for defeating all his opponents in one punch?","Who commanded the survey corps in Attack on Titan?","Which is the highest-grossing anime film worldwide?"};
                                                                                                                           //Questions given by Sachetan
     String[] answers = {"Domain Expansin","Sazae-san","Saitama","Erwin Smith","Demon Slayer: Mugen Train"};

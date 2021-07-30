@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/sportsbg"
+    android:background="@drawable/stadium"
     tools:context=".SportsActivity">
 
     <TextView
@@ -17,7 +16,7 @@
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
         android:text="TextView"
-        android:textColor="#7B1818"
+        android:textColor="#0C0C0C"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -45,9 +44,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="23px"
-
             android:text="RadioButton"
-            android:textColor="#7B1818"
+            android:textColor="#0E0E0E"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -56,9 +54,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="23px"
-
             android:text="RadioButton"
-            android:textColor="#7B1818"
+            android:textColor="#0C0C0C"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -67,9 +64,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="23px"
-
             android:text="RadioButton"
-            android:textColor="#7B1818"
+            android:textColor="#0C0C0C"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -78,9 +74,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="23px"
-
             android:text="RadioButton"
-            android:textColor="#7B1818"
+            android:textColor="#0C0C0C"
             android:textSize="20sp"
             android:textStyle="bold" />
     </RadioGroup>
@@ -90,9 +85,9 @@
         android:layout_width="188dp"
         android:layout_height="61dp"
         android:text="Confirm"
-        android:textColor="#131313"
+        android:textColor="#FAF8F8"
         android:textSize="20sp"
-        app:backgroundTint="#FA5F55"
+        app:backgroundTint="#17A108"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"

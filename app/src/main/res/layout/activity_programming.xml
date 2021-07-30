@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/programmingback"
+    android:background="@drawable/hoho"
     tools:context=".ProgrammingActivity">
 
     <TextView
@@ -16,7 +16,7 @@
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
         android:text="TextView"
-        android:textColor="#013220"
+        android:textColor="#FCFDFD"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -38,32 +38,33 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.617">
-    <RadioButton
-        android:id="@+id/option1_prog"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="23px"
-        android:text="RadioButton"
-        android:textColor="#013220"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        <RadioButton
+            android:id="@+id/option1_prog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="23px"
+            android:text="RadioButton"
+            android:textColor="#FAFBFB"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-    <RadioButton
-        android:id="@+id/option2_prog"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="23px"
-        android:text="RadioButton"
-        android:textColor="#013220"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        <RadioButton
+            android:id="@+id/option2_prog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="23px"
+            android:text="RadioButton"
+            android:textColor="#F8FBFA"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
         <RadioButton
             android:id="@+id/option3_prog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="23px"
             android:text="RadioButton"
-            android:textColor="#013220"
+            android:textColor="#FAFBFB"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -73,7 +74,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="23px"
             android:text="RadioButton"
-            android:textColor="#013220"
+            android:textColor="#F9FAF9"
             android:textSize="20sp"
             android:textStyle="bold" />
 

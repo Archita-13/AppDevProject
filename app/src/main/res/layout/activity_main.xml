@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bge"
+    android:background="@drawable/h1"
     tools:context=".MainActivity">
 
     <EditText
@@ -14,6 +14,7 @@
         android:ems="10"
         android:hint="Enter Name"
         android:inputType="textPersonName"
+        android:textColor="#F8F6F6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.82"
@@ -28,6 +29,7 @@
         android:ems="10"
         android:hint="Enter Password"
         android:inputType="textPassword"
+        android:textColor="#FBF9F9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.825"
@@ -47,28 +49,29 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.711" />
+        app:layout_constraintVertical_bias="0.815" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="No. of attemtps remaining : 5"
+        android:textColor="#F8F6F6"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.813"
+        app:layout_constraintVertical_bias="0.884"
         tools:text="No. of attemtps remaining : 5" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="***WELCOME TO QUIZ APP***"
-        android:textColor="#DC074F"
+        android:text="WELCOME TO QUIZ APP"
+        android:textColor="#FBFAFA"
         android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -95,6 +98,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Name :"
+        android:textColor="#FBF8F8"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -109,6 +113,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Password :"
+        android:textColor="#FBF9F9"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
