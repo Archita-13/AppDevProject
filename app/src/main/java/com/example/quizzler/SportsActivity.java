@@ -11,43 +11,42 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class AnimeActivity extends AppCompatActivity {
+public class SportsActivity extends AppCompatActivity {
     TextView question;
     Button confirm;
     RadioGroup radio_g;
     RadioButton op1,op2,op3,op4;
 
-    String[] questions = {"What is the name of strongest move in jujutsu Kaisen?","Which is the longest Anime series ever?","Who commanded the survey corps in the Attack of Titans?","Which is the highest-grossing anime film worldwide(2021)?","Which anime character is famous for defeating all his opponents in one punch?"};
 
-    String[] answers = {"Domain Expansin","Sazae-san","Erwin Smith","Demon Slayer","Saitama"};
+    String[] questions = {"Usain bolt holds the world record of finishing the 100 m race in how many seconds?","Which Indian athlete was the first to win a medal in tokyo olympics 2020?","Michael Phelps holds the record for the most number of olympic gold medals. How many gold medals has he earned in the olympics till date?","Which football player holds the record for the most number of goals in Uefa Champions League history?","Roger Federer, Rafael Nadal, Novak Djokovic hold the record for the most number of grand slam titles. How many have they each won?"};
 
-    String[] opt ={"Kamehameha","Domain Expansin","Serious Punch","Rasengan","One Piece","Dragon Ball Z","Sazae-san","Naruto","Hange Zoe","Erwin Smith","Levi Ackerman","Keith Shadis","Your Name","Spirited Away","Demon Slayer:Mugen Train","Weathering with you","Goku","Saitama","All night","Gojo Satoru"};
+    String[] answers = {"9.58 sec","Mirabai Chanu","23","Cristiano Ronaldo","20"};
 
+    String[] opt ={"9.58", "9.89", "9.2","10.1","Manika Batra", "Mary Kom", "PV Sindhu", "Mirabai Chanu","20", "23", "34", "30","Lionel Messi", "Cristiano Ronaldo", "Robert Lewandowski", "Raul Gonzalez","21","20","18","22"};
 
     int flag=0;
-    public static int marks=0,correct=0;
+    public static int marks=0,correct=0,wrong=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_anime);
-
-        question = findViewById(R.id.question_anime);
+        setContentView(R.layout.activity_sports);
+        question = findViewById(R.id.question_sports);
         question.setText(questions[flag]);
-        confirm = findViewById(R.id.confirm_anime);
-        radio_g = findViewById(R.id.radioGroup_anime);
-        op1 = findViewById(R.id.option1_anime);
+        confirm = findViewById(R.id.confirm_sports);
+        radio_g = findViewById(R.id.radioGroup_sports);
+        op1 = findViewById(R.id.option1_sports);
         op1.setText(opt[flag]);
-        op2 = findViewById(R.id.option2_anime);
+        op2 = findViewById(R.id.option2_sports);
         op2.setText(opt[flag+1]);
-        op3 = findViewById(R.id.option3_anime);
+        op3 = findViewById(R.id.option3_sports);
         op3.setText(opt[flag+2]);
-        op4 = findViewById(R.id.option4_anime);
+        op4 = findViewById(R.id.option4_sports);
         op4.setText(opt[flag+3]);
         confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(radio_g.getCheckedRadioButtonId()==-1){
-                    Toast.makeText(AnimeActivity.this, "Please select one option", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SportsActivity.this, "Please select one option", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -69,9 +68,9 @@ public class AnimeActivity extends AppCompatActivity {
                 else
                 {
                     marks = correct;
-                    Intent anime_result = new Intent(AnimeActivity.this,AnimeResult.class);
+                    Intent sports_result_page = new Intent(SportsActivity.this,SportsResult.class);
 
-                    startActivity(anime_result);
+                    startActivity(sports_result_page);
                 }
                 radio_g.clearCheck();
             }

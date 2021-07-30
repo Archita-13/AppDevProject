@@ -3,13 +3,16 @@ package com.example.quizzler;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
 import android.view.View;
 import android.widget.Button;
+
 import android.widget.TextView;
 
 public class EntertainmentResult extends AppCompatActivity {
     TextView result,state;
     Button button5;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
