@@ -16,6 +16,7 @@ Button currentAffairs;
         setContentView(R.layout.activity_select_category);
         bts = findViewById(R.id.bts);
         currentAffairs = findViewById(R.id.currentAffairs);
+
         bts.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,5 +31,6 @@ Button currentAffairs;
                 startActivity(curr);
             }
         });
+
     }
 }
