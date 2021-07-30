@@ -11,43 +11,43 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class BtsActivity extends AppCompatActivity {
-TextView question;
-Button confirm;
-RadioGroup radio_g;
-RadioButton op1,op2,op3,op4;
+public class AnimeActivity extends AppCompatActivity {
+    TextView question;
+    Button confirm;
+    RadioGroup radio_g;
+    RadioButton op1,op2,op3,op4;
 
 
-String[] questions = {"What is the name of BTS's debut album?","Which was BTS's first show?","On which Award show did BTS make their US TV performance debut?","Which date is ARMY's birthday?","Who is the youngest member of the band?"};
+    String[] questions = {"What is the name of strongest move in jujutsu Kaisen?","Which is the longest Anime series ever?","On which Award show did BTS make their US TV performance debut?","Which date is ARMY's birthday?","Who is the youngest member of the band?"};
 
-String[] answers = {"2 Cool 4 Skool","Rookie King: Channel Bangtan","American Music Awards","July 9","Jungkook"};
+    String[] answers = {"Domain Expansin","Sazae-san","American Music Awards","July 9","Jungkook"};
 
-String[] opt ={"2 Cool 4 Skool","We are Bulletproof","Skool Luv Affair","O!RUL8,2?","Run BTS","BTS Gayo","Rookie King: Channel Bangtan","American Hustle Life","American Music Awards","Billboard Music Awards","The Grammys","Teen Choice Awards","June 12","June 13","July 13","July 9","Jungkook","Suga","Jin","V"};
+    String[] opt ={"kamehameha","Domain Expansin","Serious Punch","Rasengan","One Piece","Dragon Ball Z","Sazae-san","Naruto","American Music Awards","Billboard Music Awards","The Grammys","Teen Choice Awards","June 12","June 13","July 13","July 9","Jungkook","Suga","Jin","V"};
 
-int flag=0;
-public static int marks=0,correct=0;
+    int flag=0;
+    public static int marks=0,correct=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bts);
+        setContentView(R.layout.activity_anime);
 
-        question = findViewById(R.id.question);
+        question = findViewById(R.id.question_anime);
         question.setText(questions[flag]);
-        confirm = findViewById(R.id.confirm);
-        radio_g = findViewById(R.id.radioGroup);
-        op1 = findViewById(R.id.option1);
+        confirm = findViewById(R.id.confirm_anime);
+        radio_g = findViewById(R.id.radioGroup_anime);
+        op1 = findViewById(R.id.option1_anime);
         op1.setText(opt[flag]);
-        op2 = findViewById(R.id.option2);
+        op2 = findViewById(R.id.option2_anime);
         op2.setText(opt[flag+1]);
-        op3 = findViewById(R.id.option3);
+        op3 = findViewById(R.id.option3_anime);
         op3.setText(opt[flag+2]);
-        op4 = findViewById(R.id.option4);
+        op4 = findViewById(R.id.option4_anime);
         op4.setText(opt[flag+3]);
         confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(radio_g.getCheckedRadioButtonId()==-1){
-                    Toast.makeText(BtsActivity.this, "Please select one option", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AnimeActivity.this, "Please select one option", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -69,9 +69,9 @@ public static int marks=0,correct=0;
                 else
                 {
                     marks = correct;
-                    Intent intent = new Intent(BtsActivity.this,BTSResultActivity.class);
+                    Intent anime_result = new Intent(AnimeActivity.this,AnimeResult.class);
 
-                    startActivity(intent);
+                    startActivity(anime_result);
                 }
                 radio_g.clearCheck();
             }

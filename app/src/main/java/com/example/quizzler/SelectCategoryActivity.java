@@ -8,33 +8,23 @@ import android.view.View;
 import android.widget.Button;
 
 public class SelectCategoryActivity extends AppCompatActivity {
-Button sports;
 Button bts;
 Button currentAffairs;
-
+Button programming;
+Button entertainment;
+Button sports;
+Button anime;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_category);
-
-        bts = findViewById(R.id.bts);
-        sports=findViewById(R.id.sports);
-        sports.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(SelectCategoryActivity.this, Sports.class);
-                startActivity(intent);
-            }
-        });
-        bts.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(SelectCategoryActivity.this, BtsActivity.class);
-                startActivity(intent);
-            }
-        });
         bts = findViewById(R.id.bts);
         currentAffairs = findViewById(R.id.currentAffairs);
+        programming = findViewById(R.id.programming);
+        entertainment = findViewById(R.id.entertainment);
+        sports = findViewById(R.id.sports);
+        anime = findViewById(R.id.anime);
+
         bts.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,5 +39,34 @@ Button currentAffairs;
                 startActivity(curr);
             }
         });
+        programming.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent programming_page = new Intent(SelectCategoryActivity.this,ProgrammingActivity.class);
+                startActivity(programming_page);
+            }
+        });
+        entertainment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent entertainment_page = new Intent(SelectCategoryActivity.this,EntertainmentActivity.class);
+                startActivity(entertainment_page);
+            }
+        });
+        sports.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent sports_page = new Intent(SelectCategoryActivity.this,SportsActivity.class);
+                startActivity(sports_page);
+            }
+        });
+        anime.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent anime_page = new Intent(SelectCategoryActivity.this,AnimeActivity.class);
+                startActivity(anime_page);
+            }
+        });
+
     }
 }
