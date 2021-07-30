@@ -18,14 +18,16 @@ TextView result,state;
         sb.append("Your Score is : " + BtsActivity.correct);
         result.setText(sb);
         int val = BtsActivity.correct;
-        if (val<=5&&val>=4){
+        if (val<=50&&val>=40){
             state.setText("You are a certified ARMY!");
         }
-        else if(val==3){
+        else if(val==30){
             state.setText("You need just a little more practice");
         }
         else{
             state.setText("So you're only a music fan?");
         }
+
+        BtsActivity.correct=0;
     }
 }

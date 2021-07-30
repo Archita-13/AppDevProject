@@ -4,48 +4,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/btsback11"
-    tools:context=".BtsActivity">
+    android:background="@drawable/newsbackground"
+    tools:context=".CurrentAffairs">
 
     <TextView
         android:id="@+id/question"
-        android:layout_width="300dp"
-        android:layout_height="140dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
+        android:layout_width="335dp"
+        android:layout_height="134dp"
+        android:background="@drawable/textview_corner"
         android:paddingLeft="10dp"
+        android:paddingTop="10dp"
         android:paddingRight="10dp"
+        android:paddingBottom="10dp"
         android:text="TextView"
-        android:textColor="#F8F3F3"
+        android:textColor="#6E260E"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.086" />
+        app:layout_constraintVertical_bias="0.112" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
-        android:layout_width="321dp"
-        android:layout_height="336dp"
+        android:layout_width="298dp"
+        android:layout_height="291dp"
         android:layout_margin="20px"
+        android:layout_marginTop="8dp"
         android:padding="23px"
-        android:textColor="#F8F3F3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.617">
+        app:layout_constraintVertical_bias="0.627">
 
         <RadioButton
             android:id="@+id/option1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="23px"
+            android:background="@drawable/textview_corner"
             android:text="RadioButton"
-            android:textColor="#F8F3F3"
+            android:textColor="#6E260E"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -54,8 +57,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="23px"
+            android:background="@drawable/textview_corner"
             android:text="RadioButton"
-            android:textColor="#F8F3F3"
+            android:textColor="#6E260E"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -64,8 +68,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="23px"
+            android:background="@drawable/textview_corner"
             android:text="RadioButton"
-            android:textColor="#F8F3F3"
+            android:textColor="#6E260E"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -74,8 +79,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="23px"
+            android:background="@drawable/textview_corner"
             android:text="RadioButton"
-            android:textColor="#F8F3F3"
+            android:textColor="#6E260E"
             android:textSize="20sp"
             android:textStyle="bold" />
     </RadioGroup>
@@ -86,12 +92,11 @@
         android:layout_height="61dp"
         android:text="Confirm"
         android:textColor="#F1EEF3"
-        app:backgroundTint="#5b2677"
+        app:backgroundTint="#6E260E"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.902" />
-
+        app:layout_constraintVertical_bias="0.907" />
 </androidx.constraintlayout.widget.ConstraintLayout>
