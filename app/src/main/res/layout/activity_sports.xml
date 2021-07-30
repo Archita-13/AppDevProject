@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/stadium"
+    android:background="@drawable/sportsbbbbg"
     tools:context=".SportsActivity">
 
     <TextView
@@ -16,7 +16,7 @@
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
         android:text="TextView"
-        android:textColor="#0C0C0C"
+        android:textColor="#0B0B0B"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -45,7 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="23px"
             android:text="RadioButton"
-            android:textColor="#0E0E0E"
+            android:textColor="#0B0B0B"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="23px"
             android:text="RadioButton"
-            android:textColor="#0C0C0C"
+            android:textColor="#0B0B0B"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -65,7 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="23px"
             android:text="RadioButton"
-            android:textColor="#0C0C0C"
+            android:textColor="#0B0B0B"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -75,7 +75,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="23px"
             android:text="RadioButton"
-            android:textColor="#0C0C0C"
+            android:textColor="#0B0B0B"
             android:textSize="20sp"
             android:textStyle="bold" />
     </RadioGroup>
