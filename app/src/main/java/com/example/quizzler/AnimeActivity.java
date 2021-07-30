@@ -19,7 +19,7 @@ public class AnimeActivity extends AppCompatActivity {
 
 
     String[] questions = {"What is the name of strongest move in jujutsu Kaisen?","Which is the longest Anime series ever?","On which Award show did BTS make their US TV performance debut?","Which date is ARMY's birthday?","Who is the youngest member of the band?"};
-
+                                                                                                                          //Questions given by Sachetan
     String[] answers = {"Domain Expansin","Sazae-san","American Music Awards","July 9","Jungkook"};
 
     String[] opt ={"kamehameha","Domain Expansin","Serious Punch","Rasengan","One Piece","Dragon Ball Z","Sazae-san","Naruto","American Music Awards","Billboard Music Awards","The Grammys","Teen Choice Awards","June 12","June 13","July 13","July 9","Jungkook","Suga","Jin","V"};
