@@ -3,14 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/animeresultback"
     android:layout_height="match_parent"
-    android:background="@color/cc"
-    tools:context=".ProgrammingResult">
+    tools:context=".AnimeResult">
+
     <TextView
-        android:id="@+id/prog_result_box"
+        android:id="@+id/anime_result_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#F9F6EE"
+        android:textColor="#FAF9F6"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -21,11 +22,12 @@
         app:layout_constraintVertical_bias="0.179" />
 
     <TextView
-        android:id="@+id/prog_result_statement"
+        android:id="@+id/anime_statement"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#F9F6EE"
+        android:textColor="#FAF9F6"
         android:textSize="20sp"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

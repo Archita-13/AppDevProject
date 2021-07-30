@@ -9,8 +9,8 @@
 
     <TextView
         android:id="@+id/question_tv"
-        android:layout_width="335dp"
-        android:layout_height="134dp"
+        android:layout_width="352dp"
+        android:layout_height="155dp"
         android:paddingLeft="10dp"
         android:paddingTop="10dp"
         android:paddingRight="10dp"
@@ -23,7 +23,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.152" />
+        app:layout_constraintVertical_bias="0.078" />
 
     <RadioGroup
         android:id="@+id/radioGroup_tv"
@@ -37,7 +37,7 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.55">
+        app:layout_constraintVertical_bias="0.539">
 
         <RadioButton
             android:id="@+id/option1_tv"

@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Quizzler">
-        <activity android:name=".SportsActivity"></activity>
+        <activity android:name=".AnimeResult"></activity>
+        <activity android:name=".AnimeActivity" />
+        <activity android:name=".SportsResult" />
+        <activity android:name=".SportsActivity" />
         <activity android:name=".EntertainmentResult" />
         <activity android:name=".EntertainmentActivity" />
         <activity android:name=".ProgrammingResult" />

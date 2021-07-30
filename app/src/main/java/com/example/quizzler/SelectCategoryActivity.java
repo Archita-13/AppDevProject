@@ -12,6 +12,8 @@ Button bts;
 Button currentAffairs;
 Button programming;
 Button entertainment;
+Button sports;
+Button anime;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +22,8 @@ Button entertainment;
         currentAffairs = findViewById(R.id.currentAffairs);
         programming = findViewById(R.id.programming);
         entertainment = findViewById(R.id.entertainment);
+        sports = findViewById(R.id.sports);
+        anime = findViewById(R.id.anime);
 
         bts.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,6 +51,20 @@ Button entertainment;
             public void onClick(View v) {
                 Intent entertainment_page = new Intent(SelectCategoryActivity.this,EntertainmentActivity.class);
                 startActivity(entertainment_page);
+            }
+        });
+        sports.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent sports_page = new Intent(SelectCategoryActivity.this,SportsActivity.class);
+                startActivity(sports_page);
+            }
+        });
+        anime.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent anime_page = new Intent(SelectCategoryActivity.this,AnimeActivity.class);
+                startActivity(anime_page);
             }
         });
 

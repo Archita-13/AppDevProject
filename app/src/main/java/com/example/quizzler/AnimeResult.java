@@ -5,31 +5,30 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-public class ProgrammingResult extends AppCompatActivity {
+public class AnimeResult extends AppCompatActivity {
     TextView result,state;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_programming_result);
+        setContentView(R.layout.activity_anime_result);
 
-        result = findViewById(R.id.prog_result_box);
-        state = findViewById(R.id.prog_result_statement);
+        result = findViewById(R.id.anime_result_text);
+        state = findViewById(R.id.anime_statement);
 
         StringBuffer sb = new StringBuffer();
-        sb.append("Your Score is : " + ProgrammingActivity.correct);
+        sb.append("Your Score is : " + AnimeActivity.correct);
         result.setText(sb);
-        int val = ProgrammingActivity.correct;
+        int val = AnimeActivity.correct;
         if (val<=50&&val>=40){
-            state.setText("Damn! You are a Geek");
+            state.setText("You are a certified Weeb!");
         }
         else if(val==30){
             state.setText("You need just a little more practice");
         }
         else{
-            state.setText("Oops! You should code more");
+            state.setText("Do you even watch anime?");
         }
 
-        ProgrammingActivity.correct=0;
+        AnimeActivity.correct=0;
     }
-
 }
