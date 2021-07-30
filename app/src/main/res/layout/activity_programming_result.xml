@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/w"
-    tools:context=".currentAffairsResult">
+    android:background="@drawable/huhu"
+    tools:context=".ProgrammingResult">
     <TextView
-        android:id="@+id/a"
+        android:id="@+id/prog_result_box"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#6d431b"
+        android:textColor="#F9F6EE"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -21,10 +21,10 @@
         app:layout_constraintVertical_bias="0.179" />
 
     <TextView
-        android:id="@+id/b"
+        android:id="@+id/prog_result_statement"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#6d431b"
+        android:textColor="#F9F6EE"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,34 +33,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.291" />
 
-<<<<<<< Updated upstream
-=======
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="We hope you enjoyed the quiz !"
-        android:textColor="#A62C05"
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.401" />
+        app:layout_constraintVertical_bias="0.387" />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="EXIT"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.948" />
-
-
->>>>>>> Stashed changes
 </androidx.constraintlayout.widget.ConstraintLayout>

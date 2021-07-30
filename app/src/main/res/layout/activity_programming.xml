@@ -1,108 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-<<<<<<< Updated upstream
-=======
-
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/stadium"
-    tools:context=".SportsActivity">
+    android:background="@drawable/hoho"
+    tools:context=".ProgrammingActivity">
 
     <TextView
-        android:id="@+id/question_sports"
-        android:layout_width="372dp"
-        android:layout_height="167dp"
+        android:id="@+id/question_prog"
+        android:layout_width="368dp"
+        android:layout_height="120dp"
         android:paddingLeft="10dp"
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
         android:text="TextView"
-        android:textColor="#0C0C0C"
+        android:textColor="#FCFDFD"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.045" />
-
-    <RadioGroup
-        android:id="@+id/radioGroup_sports"
-        android:layout_width="298dp"
-        android:layout_height="291dp"
-        android:layout_margin="20px"
-        android:layout_marginTop="8dp"
-        android:padding="23px"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.55">
+        app:layout_constraintVertical_bias="0.079" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup_prog"
+        android:layout_width="321dp"
+        android:layout_height="336dp"
+        android:layout_margin="20px"
+        android:padding="23px"
+        android:textColor="#013220"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.617">
 
         <RadioButton
-            android:id="@+id/option1_sports"
+            android:id="@+id/option1_prog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="23px"
-
             android:text="RadioButton"
-            android:textColor="#0E0E0E"
+            android:textColor="#FAFBFB"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <RadioButton
-            android:id="@+id/option2_sports"
+            android:id="@+id/option2_prog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="23px"
-
             android:text="RadioButton"
-            android:textColor="#0C0C0C"
+            android:textColor="#F8FBFA"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <RadioButton
-            android:id="@+id/option3_sports"
+            android:id="@+id/option3_prog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="23px"
-
             android:text="RadioButton"
-            android:textColor="#0C0C0C"
+            android:textColor="#FAFBFB"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <RadioButton
-            android:id="@+id/option4_sports"
+            android:id="@+id/option4_prog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="23px"
-
             android:text="RadioButton"
-            android:textColor="#0C0C0C"
+            android:textColor="#F9FAF9"
             android:textSize="20sp"
             android:textStyle="bold" />
+
     </RadioGroup>
 
     <Button
-        android:id="@+id/confirm_sports"
+        android:id="@+id/confirm_prog"
         android:layout_width="188dp"
         android:layout_height="61dp"
         android:text="Confirm"
-        android:textColor="#FAF8F8"
-        android:textSize="20sp"
-        app:backgroundTint="#17A108"
+        android:textColor="#F1EEF3"
+        app:backgroundTint="#013220"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.907" />
->>>>>>> Stashed changes
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+        app:layout_constraintVertical_bias="0.9" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,33 +7,32 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class BTSResultActivity extends AppCompatActivity {
-TextView result,state;
-Button button3;
+public class SportsResult extends AppCompatActivity {
+    TextView result,state;
+    Button button7;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_btsresult);
-        result = findViewById(R.id.textView11);
-        state = findViewById(R.id.textView15);
-        button3=findViewById(R.id.button3);
-
+        setContentView(R.layout.activity_sports_result);
+        result = findViewById(R.id.sports_result);
+        state = findViewById(R.id.sports_statement);
+        button7=findViewById(R.id.button7);
         StringBuffer sb = new StringBuffer();
-        sb.append("Your Score is : " + BtsActivity.correct);
+        sb.append("Your Score is : " + SportsActivity.correct);
         result.setText(sb);
-        int val = BtsActivity.correct;
+        int val = SportsActivity.correct;
         if (val<=50&&val>=40){
-            state.setText("You are a certified ARMY!");
+            state.setText("Wow! You really seem to be a sports enthusiast");
         }
         else if(val==30){
-            state.setText("You need just a little more practice");
+            state.setText("Not bad! Can do better");
         }
         else{
-            state.setText("So you're only a music fan?");
+            state.setText("Sad! Better luck next time");
         }
 
-        BtsActivity.correct=0;
-        button3.setOnClickListener(new View.OnClickListener() {
+        SportsActivity.correct=0;
+        button7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 moveTaskToBack(true);

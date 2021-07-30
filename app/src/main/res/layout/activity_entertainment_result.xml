@@ -4,28 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/w"
-    tools:context=".currentAffairsResult">
+    android:background="@drawable/entertainmentresultback"
+    tools:context=".EntertainmentResult">
     <TextView
-        android:id="@+id/a"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#6d431b"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.179" />
+    android:id="@+id/result_text_tv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#00008B"
+    android:textSize="34sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.497"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.179" />
 
     <TextView
-        android:id="@+id/b"
+        android:id="@+id/result_statement_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#6d431b"
+        android:textColor="#00008B"
         android:textSize="20sp"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -33,24 +34,22 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.291" />
 
-<<<<<<< Updated upstream
-=======
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="We hope you enjoyed the quiz !"
-        android:textColor="#A62C05"
+        android:textColor="#0820A8"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.401" />
+        app:layout_constraintVertical_bias="0.412" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="EXIT"
@@ -59,8 +58,6 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.948" />
+        app:layout_constraintVertical_bias="0.934" />
 
-
->>>>>>> Stashed changes
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,53 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/w"
-    tools:context=".currentAffairsResult">
-    <TextView
-        android:id="@+id/a"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#6d431b"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.179" />
+    android:background="@drawable/sportsresultbg"
+    tools:context=".SportsResult">
 
     <TextView
-        android:id="@+id/b"
+        android:id="@+id/sports_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#6d431b"
-        android:textSize="20sp"
+        android:textColor="#FAF8FB"
+        android:textSize="34sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.291" />
+        app:layout_constraintVertical_bias="0.131" />
 
-<<<<<<< Updated upstream
-=======
     <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="We hope you enjoyed the quiz !"
-        android:textColor="#A62C05"
+        android:id="@+id/sports_statement"
+        android:layout_width="1dp"
+        android:layout_height="43dp"
+        android:gravity="center"
+        android:textColor="#F8F8F8"
         android:textSize="20sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.401" />
+        app:layout_constraintVertical_bias="0.235" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We hope you enjoyed the quiz !"
+        android:textColor="#F8F5F5"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.356" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/button7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="EXIT"
@@ -59,8 +59,5 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.948" />
-
-
->>>>>>> Stashed changes
+        app:layout_constraintVertical_bias="0.954" />
 </androidx.constraintlayout.widget.ConstraintLayout>
