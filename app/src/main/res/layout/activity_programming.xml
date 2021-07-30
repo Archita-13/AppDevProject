@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/hoho"
+    android:background="@drawable/backdprog"
     tools:context=".ProgrammingActivity">
 
     <TextView
@@ -17,7 +16,7 @@
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
         android:text="TextView"
-        android:textColor="#FCFDFD"
+        android:textColor="#EEF1F0"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -39,33 +38,32 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.617">
-        <RadioButton
-            android:id="@+id/option1_prog"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="23px"
-            android:text="RadioButton"
-            android:textColor="#FAFBFB"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+    <RadioButton
+        android:id="@+id/option1_prog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="23px"
+        android:text="RadioButton"
+        android:textColor="#EEF1F0"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
-        <RadioButton
-            android:id="@+id/option2_prog"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="23px"
-            android:text="RadioButton"
-            android:textColor="#F8FBFA"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
+    <RadioButton
+        android:id="@+id/option2_prog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="23px"
+        android:text="RadioButton"
+        android:textColor="#EEF1F0"
+        android:textSize="20sp"
+        android:textStyle="bold" />
         <RadioButton
             android:id="@+id/option3_prog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="23px"
             android:text="RadioButton"
-            android:textColor="#FAFBFB"
+            android:textColor="#EEF1F0"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -75,7 +73,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="23px"
             android:text="RadioButton"
-            android:textColor="#F9FAF9"
+            android:textColor="#EEF1F0"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -83,11 +81,13 @@
 
     <Button
         android:id="@+id/confirm_prog"
-        android:layout_width="188dp"
-        android:layout_height="61dp"
+        android:layout_width="166dp"
+        android:layout_height="56dp"
         android:text="Confirm"
-        android:textColor="#F1EEF3"
-        app:backgroundTint="#013220"
+        android:textColor="#010E57"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="#118BEC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.488"
