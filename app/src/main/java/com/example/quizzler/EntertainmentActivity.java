@@ -11,43 +11,43 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class AnimeActivity extends AppCompatActivity {
+public class EntertainmentActivity extends AppCompatActivity {
     TextView question;
     Button confirm;
     RadioGroup radio_g;
     RadioButton op1,op2,op3,op4;
 
-    String[] questions = {"What is the name of strongest move in jujutsu Kaisen?","Which is the longest Anime series ever?","Who commanded the survey corps in the Attack of Titans?","Which is the highest-grossing anime film worldwide(2021)?","Which anime character is famous for defeating all his opponents in one punch?"};
 
-    String[] answers = {"Domain Expansin","Sazae-san","Erwin Smith","Demon Slayer","Saitama"};
+    String[] questions = {"Who said this dialogue?\n\nShut up Anderson! You lower the IQ of the whole street","Which is the highest grossing film in India?","Who became the Female artist of the decade 2010-2020?","Which of these animated films have never won an oscar?","What's inside Harry Potters's wand?"};
 
-    String[] opt ={"Kamehameha","Domain Expansin","Serious Punch","Rasengan","One Piece","Dragon Ball Z","Sazae-san","Naruto","Hange Zoe","Erwin Smith","Levi Ackerman","Keith Shadis","Your Name","Spirited Away","Demon Slayer:Mugen Train","Weathering with you","Goku","Saitama","All night","Gojo Satoru"};
+    String[] answers = {"Sherlock Holmes","Baahubali 2: The Conclusion","Taylor Swift","Tangled","Phoenix feather"};
 
+    String[] opt ={"Sheldon Cooper","Harvey Specter","Sherlock Holmes","Tyrion Lannister","Baahubali 2: The Conclusion","Dangal","Baahubali: The Beginning","Bajrangi Bhaijaan","Ariana Grande","Lady Gaga","Taylor Swift","Rihanna","Soul","Frozen","Spider-Man: Into the Spider-Verse","Tangled","Unicorn Hair","Dragon Heartstrings","Phoenix feather","None of these"};
 
     int flag=0;
     public static int marks=0,correct=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_anime);
+        setContentView(R.layout.activity_entertainment);
 
-        question = findViewById(R.id.question_anime);
+        question = findViewById(R.id.question_tv);
         question.setText(questions[flag]);
-        confirm = findViewById(R.id.confirm_anime);
-        radio_g = findViewById(R.id.radioGroup_anime);
-        op1 = findViewById(R.id.option1_anime);
+        confirm = findViewById(R.id.confirm_tv);
+        radio_g = findViewById(R.id.radioGroup_tv);
+        op1 = findViewById(R.id.option1_tv);
         op1.setText(opt[flag]);
-        op2 = findViewById(R.id.option2_anime);
+        op2 = findViewById(R.id.option2_tv);
         op2.setText(opt[flag+1]);
-        op3 = findViewById(R.id.option3_anime);
+        op3 = findViewById(R.id.option3_tv);
         op3.setText(opt[flag+2]);
-        op4 = findViewById(R.id.option4_anime);
+        op4 = findViewById(R.id.option4_tv);
         op4.setText(opt[flag+3]);
         confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(radio_g.getCheckedRadioButtonId()==-1){
-                    Toast.makeText(AnimeActivity.this, "Please select one option", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(EntertainmentActivity.this, "Please select one option", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -69,9 +69,9 @@ public class AnimeActivity extends AppCompatActivity {
                 else
                 {
                     marks = correct;
-                    Intent anime_result = new Intent(AnimeActivity.this,AnimeResult.class);
+                    Intent entertainment_result = new Intent(EntertainmentActivity.this,EntertainmentResult.class);
 
-                    startActivity(anime_result);
+                    startActivity(entertainment_result);
                 }
                 radio_g.clearCheck();
             }

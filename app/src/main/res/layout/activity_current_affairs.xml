@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/newsbackground"
     tools:context=".CurrentAffairs">
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/question"

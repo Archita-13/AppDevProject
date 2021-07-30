@@ -10,6 +10,7 @@ import android.widget.TextView;
 public class SportsResult extends AppCompatActivity {
     TextView result,state;
     Button button7;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

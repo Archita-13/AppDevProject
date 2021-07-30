@@ -25,7 +25,7 @@ String[] answers = {"2 Cool 4 Skool","Rookie King: Channel Bangtan","American Mu
 String[] opt ={"2 Cool 4 Skool","We are Bulletproof","Skool Luv Affair","O!RUL8,2?","Run BTS","BTS Gayo","Rookie King: Channel Bangtan","American Hustle Life","American Music Awards","Billboard Music Awards","The Grammys","Teen Choice Awards","June 12","June 13","July 13","July 9","Jungkook","Suga","Jin","V"};
 
 int flag=0;
-public static int marks=0,correct=0,wrong=0;
+public static int marks=0,correct=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
