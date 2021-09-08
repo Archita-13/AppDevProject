@@ -11,7 +11,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
-
+//commit changes
 public class CurrentAffairs extends AppCompatActivity {
     TextView question;
     Button confirm;
